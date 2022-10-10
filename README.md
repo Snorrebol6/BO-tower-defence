@@ -1,4 +1,7 @@
 # BO-tower-defence
 ```mermaid
 graph TD
-    A[start] -->|start timer: 5 seconds| B((spawn enemy))-->|ememy walks towards end of the road|c((end of map))
+    A[start timer: 5 seconds] -->  
+    B((spawn Enemy))-->C(enemy walks towards end of the road)
+   C -->|Enemy killed| D[earns gold]
+   C -->|Enemy reaches the end| E[live lost]
